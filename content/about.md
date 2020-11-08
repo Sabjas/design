@@ -1,9 +1,9 @@
 ---
-Title: Hem
-Description: Min förstasida
+Title: Om mig
+Description: Min Om mig-sida
 ---
 
-Hem
+Om mig
 ==========================
 
 Mitt namn när Sabina och jag läser kursen Design vid Blekinge Tekniska Högskola. På min fritid spelar jag innebandy eller tennis.
