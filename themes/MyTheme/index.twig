@@ -17,11 +17,7 @@
         <link rel="canonical" href="{{ current_page.url }}" />
     {% endif %}
 
-    <link rel="stylesheet" href="{{ theme_url }}/../shared/css/font-awsome.min.css" type="text/css" />
-    <!-- Insert font choice here -->
-    {# <link rel="stylesheet" href="{{ theme_url }}/../shared//css/dorid-sans.css" type="text/css" /> #}
-    <!-- End -->
-    <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="{{ theme_url }}/css/style.min.css" type="text/css" />
 
 </head>
 <!-- "Widescreen-mode" can be activated in portfolio/config/config.yml -->
@@ -69,7 +65,26 @@
     <div class="footer">
         <div class="container">
             <p>
-               Klick här för att komma till webbplatsens <a href="https://github.com/Sabjas/design" title="Link till sidans github repo.">github-repo.</a>
+               Sabinas portfolio
+                  <!-- Loads from FontAwesome (themes/shared/css/font-awesome.min.css) -->
+                {% for social in pages["_meta"].meta.social %}
+                  <a href="{{ social.url }}" title="{{ social.title }}" role="button">
+                      <i class="{{ social.icon }}" aria-hidden="true"></i>
+                      <span class="sr-only">{{ social.title }}</span>
+                  </a>
+                {% endfor %}
+                {% for Coursepage in pages["_meta"].meta.Coursepage %}
+                  <a href="{{ Coursepage.url }}" title="{{ Coursepage.title }}" role="button">
+                      <i class="{{ Coursepage.icon }}" aria-hidden="true"></i>
+                      <span class="sr-only">{{ Coursepage.title }}</span>
+                  </a>
+                {% endfor %}
+                {% for Dbwebbyt in pages["_meta"].meta.Dbwebbyt %}
+                <a href="{{ Dbwebbyt.url }}" title="{{ Dbwebbyt.title }}" role="button">
+                    <i class="{{ Dbwebbyt.icon }}" aria-hidden="true"></i>
+                    <span class="sr-only">{{ Dbwebbyt.title }}</span>
+                </a>
+              {% endfor %}
             </p>
         </div>
     </div>
