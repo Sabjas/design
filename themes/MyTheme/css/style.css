@@ -7025,6 +7025,11 @@ input::-moz-focus-inner, button::-moz-focus-inner {
   padding: 0;
 }
 
+.landingpage {
+  display: grid;
+  background-color: yellow;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }

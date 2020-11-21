@@ -1,0 +1,42 @@
+.landingpage {
+    display: grid;
+    gap: 1em 1em;
+    padding: 0 1em;
+}
+
+.landingpage h1 {
+    grid-column: span 3;
+    justify-self: center;
+}
+
+.kmom-box {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(242, 255, 169);
+}
+
+.kmom-box.project {
+    grid-column: span 3;
+}
+
+
+@media (max-width: 767px) {
+    .landingpage h1,
+    .kmom-box,
+    .kmom-box.project {
+        grid-column: span 4;
+    }
+}
+
+.arrow-icon {
+    padding: 16px;
+    align-self: flex-end;
+    color: rgb(0, 82, 0);
+}
+
+.arrow-icon:hover {
+    color: rgb(255, 109, 109);
+}

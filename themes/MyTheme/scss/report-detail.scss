@@ -1,0 +1,31 @@
+.reportpage {
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+
+.report-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 0;
+}
+
+.report-text {
+    padding: 12px;
+}
+
+li {
+    padding-bottom: 8px;
+}
+
+@media (max-width: 767px) {
+    .report-list {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .report-text {
+        grid-column: span 2;
+    }
+}

@@ -6,6 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.scss\"",
+    "watch": "sass myTheme/scss/style.scss myTheme/css/style.css --no-source-map",
+    "watch-min": "sass myTheme/scss/style.scss myTheme/css/style.min.css --no-source-map --style compressed --watch",
     "style": "sass myTheme/scss/style.scss myTheme/css/style.css --no-source-map",
     "style-min": "sass myTheme/scss/style.scss myTheme/css/style.min.css --no-source-map --style compressed"
   },
