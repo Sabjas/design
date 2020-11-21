@@ -1,3 +1,5 @@
+@import 'color-variables';
+
 .landingpage {
     display: grid;
     gap: 1em 1em;
@@ -10,12 +12,12 @@
 }
 
 .kmom-box {
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid $kmom-box-border-color;
     grid-column: span 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(242, 255, 169);
+    background-color: $kmom-box-background-color;
 }
 
 .kmom-box.project {
@@ -34,9 +36,9 @@
 .arrow-icon {
     padding: 16px;
     align-self: flex-end;
-    color: rgb(0, 82, 0);
+    color: $icon-arrow-color;
 }
 
 .arrow-icon:hover {
-    color: rgb(255, 109, 109);
+    color: $icon-arrow-hover-color;
 }

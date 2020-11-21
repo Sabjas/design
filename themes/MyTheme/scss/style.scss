@@ -9,8 +9,8 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'old';
 @import 'report';
 @import 'report-detail';
+@import 'color-variables';
 
-$text-color: rgb(107, 107, 107);
 
 * {
     font-family: 'Roboto', sans-serif;
